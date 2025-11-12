@@ -1,4 +1,4 @@
-# Coffee Shop Sales Analysis
+# Brewed Insights: Coffee Sales Analysis
 
 This project analyzes a coffee shop’s transaction data to uncover patterns in sales, revenue, and customer behavior. The goal is to provide actionable insights to optimize staffing, menu offerings, promotions, and inventory management.
 
