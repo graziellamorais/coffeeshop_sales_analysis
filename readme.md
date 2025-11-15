@@ -2,7 +2,7 @@
 
 ## 📊 Project Overview
 
-A comprehensive data analysis project examining coffee shop sales patterns to identify revenue drivers, optimize operations, and forecast future performance. This analysis combines SQL querying, statistical analysis, and basic machine learning to deliver actionable business insights.
+A data analysis project examining one year of coffee shop sales to uncover revenue drivers, improve operations, and forecast performance. It combines SQL, statistical analysis, and basic machine learning to deliver clear, actionable insights.
 
 ## 🔗 Dataset
 
