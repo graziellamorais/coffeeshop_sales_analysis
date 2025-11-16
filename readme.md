@@ -2,15 +2,16 @@
 
 ## 📊 Project Overview
 
-A data analysis project examining one year of coffee shop sales to uncover revenue drivers, improve operations, and forecast performance. It combines SQL, statistical analysis, and basic machine learning to deliver clear, actionable insights.
+A full-year sales analysis for a coffee shop, uncovering revenue drivers, operational bottlenecks, and demand patterns. The project blends SQL, exploratory analysis, and predictive modeling to generate practical, real-world business insights.
 
 ## 🔗 Dataset
 
 
-The dataset used for this analysis can be found [here](https://www.kaggle.com/datasets/kainatjamil12/coffe-sale/data).
+Source: [Kaggle](https://www.kaggle.com/datasets/kainatjamil12/coffe-sale/data).
 
-- **Number of transactions:** 3,547  
-- **Features included:**
+- **Total transactions** 3,547  
+
+- **Included features:**
   - `hour_of_day` – hour of sale (0–23)  
   - `cash_type` – payment method (cash or card)  
   - `money` – revenue from the transaction  
@@ -24,10 +25,84 @@ The dataset used for this analysis can be found [here](https://www.kaggle.com/da
 
 ## 🎯 Business Objectives
 
-- Identify top-performing products and revenue patterns
-- Optimize staffing based on hourly and daily demand
-- Uncover high-value customer transactions
-- Generate predictive models for inventory and financial planning
+- Identify the products and time windows that drive revenue
+
+- Optimize staffing and scheduling
+
+- Detect and profile high-value purchases
+
+- Build predictive models to support forecasting and inventory planning
+
+# Executive Summary / Key Findings
+
+## 📌 Key Metrics
+
+| Metric | Value |
+|--------|-------|
+| Total Transactions | 3,547 |G
+| Total Revenue | $112,245.58 |
+| Average Transaction | $31.64 |
+| High-Value Transactions (Top 25%) | 1,415 (46% of revenue) |
+| Operating Hours | 6 AM - 10 PM |
+
+## 📊 Revenue Drivers
+
+- **Top product:** Latte — $26,875 (757 units)
+
+- **Peak hour:** 10 AM — $10,198
+
+- **Best weekday:** Tuesday — $18,168
+
+- **High-value transactions:** Top 25% → 46% of revenue
+
+## ⏰ Time-Based Insights
+
+- **Morning (9–11 AM)** — peak staffing needed
+
+- **Afternoon slump (1–3 PM)** — good for promotions
+
+- **Evening** — preference for premium drinks
+
+- **Weekend revenue** ~20–25% lower than weekdays
+
+## 💰 Outliers
+
+- Top 25% transactions generated $51,511 (46% revenue)
+
+- Latte & Cappuccino dominate high-value sales
+
+## 🔮 Predictive Analysis
+
+- **Hourly forecast:** $30.16 (6 AM) → $33.22 (10 PM)
+
+- **Monthly projection:** ≈$11,076 over 3 months
+
+## 💡 Recommendations
+
+- **Staffing:** Strengthen 9–11 AM and late-afternoon mini-peaks
+
+- **Product strategy:** Prioritize Lattes & Americanos with Milk during peak
+
+- **Promotions:** Slow hours for combos/discounts
+
+- **Inventory:** Ensure top sellers are stocked during weekdays
+
+- **Weekend strategy:** Targeted offers to boost traffic
+
+## 📈 Analysis Methodology
+
+1. **Data Loading & Preparation**: CSV data imported into asSQLite database
+2. **Exploratory Data Analysis**: 
+   - Product performance analysis
+   - Temporal pattern identification (hourly, daily, monthly)
+   - Customer transaction segmentation
+3. **Statistical Analysis**:
+   - Sales growth rate calculations
+   - High-value transaction profiling (75th percentile threshold)
+   - Average transaction value by time period
+4. **Predictive Modeling**:
+    - Polynomial regression (degree 2) to capture non-linear hourly sales patterns   
+    - Monthly revenue projection using historical trends
 
 ## 🛠️ Technologies Used
 
@@ -48,47 +123,6 @@ coffee-sales-analysis/
 |   └── coffee.db (generated)
 └── README.md
 ```
-
-## 🔍 Key Findings
-
-### Revenue Drivers
-- **Top Product**: Latte generates $26,875 (757 units sold)
-- **Peak Hour**: 10 AM produces $10,198 in revenue
-- **Strongest Day**: Tuesday leads with $18,168
-- **High-Value Sales**: Top 25% of transactions contribute 46% of total revenue
-
-### Operational Insights
-- Morning rush (9-11 AM) requires maximum staffing
-- Afternoon slump (1-3 PM) presents promotional opportunities
-- Evening sales (7-9 PM) show premium drink preferences
-- Weekend revenue drops 20-25% compared to weekdays
-
-### Predictive Analysis
-- **Hourly Forecast**: Sales expected to increase from $30.16 (6 AM) to $33.22 (10 PM)
-- **Monthly Projection**: Revenue forecasted to reach $11,076 within 3 months (39% growth)
-
-## 💡 Strategic Recommendations
-
-1. **Staffing Optimization**: Increase staff during 9-11 AM and 4-5 PM peak periods
-2. **Product Focus**: Promote Latte and Americano with Milk during high-traffic hours
-3. **Promotional Strategy**: Target slow hours (1-3 PM) with lunch combos and discounts
-4. **Inventory Planning**: Ensure adequate stock of top sellers during weekdays
-5. **Weekend Activation**: Implement weekend promotions to boost lower sales days
-
-## 📈 Analysis Methodology
-
-1. **Data Loading & Preparation**: CSV data imported into SQLite database
-2. **Exploratory Data Analysis**: 
-   - Product performance analysis
-   - Temporal pattern identification (hourly, daily, monthly)
-   - Customer transaction segmentation
-3. **Statistical Analysis**:
-   - Sales growth rate calculations
-   - High-value transaction profiling (75th percentile threshold)
-   - Average transaction value by time period
-4. **Predictive Modeling**:
-    - Polynomial regression (degree 2) to capture non-linear hourly sales patterns   
-    - Monthly revenue projection using historical trends
 
 ## 🚀 Getting Started
 
@@ -124,23 +158,6 @@ GROUP BY hour_of_day
 ORDER BY hour_of_day;
 ```
 
-## 📌 Key Metrics
-
-| Metric | Value |
-|--------|-------|
-| Total Transactions | 3,547 |G
-| Total Revenue | $112,245.58 |
-| Average Transaction | $31.64 |
-| High-Value Transactions (Top 25%) | 1,415 (46% of revenue) |
-| Operating Hours | 6 AM - 10 PM |
-
-## 🔮 Future Enhancements
-
-- Customer segmentation analysis using clustering algorithms
-- Seasonal trend decomposition
-- Real-time dashboard for live sales monitoring
-- A/B testing framework for promotional campaigns
-- Integration with POS system for automated reporting
 
 ## 👤 Graziella Morais
 
