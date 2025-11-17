@@ -115,16 +115,16 @@ Source: [Kaggle](https://www.kaggle.com/datasets/kainatjamil12/coffe-sale/data).
 ## 📁 Project Structure
 
 ```
-coffee-sales-analysis/
+coffeeshop_sales/
 ├── data/
 │   └── coffee_sales.csv
 ├── notebooks/
-│   └── coffee_sales_analysis.ipynb
+│   └── coffee_sales.ipynb
 |   └── coffee.db (generated)
 └── README.md
 ```
 
-## 🚀 Getting Started
+## ⚙️ Setup
 
 ### Prerequisites
 ```bash
@@ -137,7 +137,7 @@ pip install pandas numpy scikit-learn sqlite3
 cd notebooks/
 
 # Launch Jupyter Notebook
-jupyter notebook coffee_sales_analysis.ipynb
+jupyter notebook coffee_sales.ipynb
 ```
 
 ## 📊 Sample Queries
