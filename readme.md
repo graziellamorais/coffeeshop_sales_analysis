@@ -4,7 +4,7 @@
 
 A full-year sales analysis for a coffee shop, uncovering revenue drivers, operational bottlenecks, and demand patterns. The project blends SQL, exploratory analysis, and predictive modeling to generate practical, real-world business insights.
 
-Full report [here](https://www.notion.so/Coffee-Sales-Analysis-Report-2aef3ce9b29d80f8a365c1210347a7b3?source=copy_link)
+Full report [here](https://www.notion.so/Coffee-Sales-Analysis-Report-2aef3ce9b29d80f8a365c1210347a7b3?source=copy_link) | Tableau Dashboard [here](https://public.tableau.com/app/profile/graziella.morais/viz/CoffeeSalesDashboard_17636774796320/CoffeeSalesDashboard)
 
 ## 🔗 Dataset
 
@@ -37,6 +37,8 @@ Source: [Kaggle](https://www.kaggle.com/datasets/kainatjamil12/coffe-sale/data).
 
 # Executive Summary / Key Findings
 
+![Dashboard](./Viz/Coffee%20Sales%20Dashboard.png)
+
 ## 📌 Key Metrics
 
 | Metric | Value |
@@ -68,6 +70,8 @@ Source: [Kaggle](https://www.kaggle.com/datasets/kainatjamil12/coffe-sale/data).
 - **Weekend revenue** ~20–25% lower than weekdays
 
 ## 💰 Outliers
+
+![HV Dashboard](./Viz/HV%20Dashboard.png)
 
 - Top 25% transactions generated $51,511 (46% revenue)
 
