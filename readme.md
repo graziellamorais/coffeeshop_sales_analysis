@@ -4,6 +4,8 @@
 
 A full-year sales analysis for a coffee shop, uncovering revenue drivers, operational bottlenecks, and demand patterns. The project blends SQL, exploratory analysis, and predictive modeling to generate practical, real-world business insights.
 
+Full report [here](https://www.notion.so/Coffee-Sales-Analysis-Report-2aef3ce9b29d80f8a365c1210347a7b3?source=copy_link)
+
 ## 🔗 Dataset
 
 
